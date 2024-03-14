@@ -1,6 +1,0 @@
-@Desafio_Rocketeat_Bookstore_HostAddress = http://localhost:5007
-
-GET {{Desafio_Rocketeat_Bookstore_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
