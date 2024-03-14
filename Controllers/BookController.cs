@@ -34,4 +34,22 @@ public class BookController : ControllerBase
 
         return Created(string.Empty, book);
     }
+
+    [HttpDelete]
+    [Route("{id}")]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public IActionResult Delete([FromRoute] Guid id)
+    {
+        var book = BookStore.Books.Find(x => x.Id == id);
+
+        if (book is null)
+        {
+            return NotFound("Book not found");
+        }
+
+        BookStore.Books.Remove(book);
+        
+        return NoContent();
+    }
 }

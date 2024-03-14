@@ -15,7 +15,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Communication\Responses\" />
       <Folder Include="Controllers\" />
     </ItemGroup>
 
