@@ -1,8 +1,9 @@
-namespace Desafio_Rocketeat_Bookstore.Entities;
+using Desafio_Rocketeat_Bookstore.Entities;
 
-public class Book
+namespace Desafio_Rocketeat_Bookstore.Communication.Requests;
+
+public class RequestRegisterBookJson
 {
-    public Guid Id { get; set; } = Guid.Empty;
     public string Title { get; set; } = string.Empty;
     public string Author { get; set; } = string.Empty;
     public BookGenre Genre { get; set; }

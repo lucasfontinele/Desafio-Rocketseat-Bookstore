@@ -4,5 +4,5 @@ namespace Desafio_Rocketeat_Bookstore.Data;
 
 public static class BookStore
 {
-    public static List<Book> Books = [];
+    public static readonly List<Book> Books = [];
 }
